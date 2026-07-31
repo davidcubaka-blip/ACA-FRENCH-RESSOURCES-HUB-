@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACA French Learning Resources</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a2a6c 0%, #b21f1f 50%, #fdbb2d 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 700px;
+            width: 100%;
+            padding: 50px 40px;
+            text-align: center;
+        }
+
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #1a2a6c;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 40px;
+        }
+
+        .divider {
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(90deg, #1a2a6c, #b21f1f);
+            margin: 0 auto 40px;
+            border-radius: 2px;
+        }
+
+        .resource-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 25px;
+            text-align: left;
+            border-left: 5px solid #1a2a6c;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .resource-card:last-child {
+            border-left-color: #b21f1f;
+        }
+
+        .resource-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .resource-title {
+            color: #1a2a6c;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .resource-desc {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, #1a2a6c, #2d4a9c);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(90deg, #2d4a9c, #1a2a6c);
+            transform: scale(1.05);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(90deg, #b21f1f, #d63031);
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: linear-gradient(90deg, #d63031, #b21f1f);
+            transform: scale(1.05);
+        }
+
+        .offline-tip {
+            margin-top: 35px;
+            padding: 20px;
+            background: #fff3cd;
+            border-radius: 10px;
+            border: 1px solid #ffc107;
+            color: #856404;
+            font-size: 0.9rem;
+        }
+
+        .offline-tip strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        footer {
+            margin-top: 30px;
+            color: #999;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                padding: 30px 20px;
+            }
+            h1 {
+                font-size: 1.4rem;
+            }
+            .resource-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🇫🇷</div>
+        <h1>ACA French Learning Resources</h1>
+        <p class="subtitle">12-Week Program — Student Materials</p>
+        <div class="divider"></div>
+
+        <div class="resource-card">
+            <div class="resource-icon">📘</div>
+            <div class="resource-title">Student Workbook</div>
+            <div class="resource-desc">
+                Complete exercises for each of the 12 weeks after your session with your instructor. 
+                The workbook includes a built-in scoring system to track your weekly progress.
+            </div>
+            <a href="WORKBOOK.html" class="btn btn-primary">Open Workbook</a>
+        </div>
+
+        <div class="resource-card">
+            <div class="resource-icon">🎧</div>
+            <div class="resource-title">French Listening Resources</div>
+            <div class="resource-desc">
+                Listening exercises and conversations corresponding to each weekly lesson. 
+                Practice your comprehension skills with native-level audio materials.
+            </div>
+            <a href="ACA_French_Listening.html" class="btn btn-secondary">Open Listening Materials</a>
+        </div>
+
+        <div class="offline-tip">
+            <strong>💡 Offline Use</strong>
+            You can save any page to your computer for offline use. On your browser, press <strong>Ctrl+S</strong> (Windows) or <strong>Cmd+S</strong> (Mac), then open the saved file anytime without internet.
+        </div>
+
+        <footer>
+            © Anglo-Congolese Association — French Learning Program
+        </footer>
+    </div>
+</body>
+</html>
